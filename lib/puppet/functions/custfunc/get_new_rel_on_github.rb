@@ -1,4 +1,4 @@
-Puppet::Functions.create_function(:'custfunc::get_new_rel_github.rb') do
+Puppet::Functions.create_function(:'custfunc::get_new_rel_on_github') do
   dispatch :getrel do
     param 'String', :repo
     param 'String', :token
