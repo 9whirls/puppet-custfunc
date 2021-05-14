@@ -3,7 +3,7 @@ Puppet::Functions.create_function(:'cf-github::get_new_rel') do
     param 'String', :repo
   end
 
-  def getrel(repo, token)
+  def getrel(repo)
     require 'net/http'
     require 'json'
     
